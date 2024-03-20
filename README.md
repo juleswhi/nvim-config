@@ -1,2 +1,3 @@
-# nvim-config
-Brand new Neovim Config
+# Neovim Config
+
+Minimilistic, personalised neovim configuration
