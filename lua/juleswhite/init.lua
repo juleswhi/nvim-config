@@ -1,3 +1,5 @@
+require('juleswhite.commands')
+
 -- REMAPS -- 
 
 vim.g.mapleader = " "
@@ -10,6 +12,25 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
+
+vim.api.nvim_set_keymap('n', '<Up>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Down>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Left>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Right>', '<Nop>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('i', '<Up>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Down>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Left>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<Right>', '<Nop>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('c', '<Up>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('c', '<Down>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('c', '<Left>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('c', '<Right>', '<Nop>', { noremap = true, silent = true })
+
+vim.opt.mouse = ""
+
+
 
 -- CONFIG --
 
@@ -80,4 +101,5 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+
 end)
